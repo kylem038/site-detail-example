@@ -1,0 +1,554 @@
+@font-face {
+    font-family: 'Gotham Thin';
+    src: url('./fonts/Gotham/Gotham-Thin.otf');
+}
+
+@font-face {
+  font-family: 'Gotham Regular';
+  src: url('./fonts/Gotham/Gotham-Medium.otf');
+}
+
+
+body {
+  font-family: 'Gotham Thin', sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-weight: 100;
+  font-size: 54px;
+  letter-spacing: .025em;
+  color: #666666;
+}
+
+h3 {
+  font-family: 'Gotham Regular', sans-serif;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666666;
+}
+
+li a {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 10px;
+}
+
+button {
+  width: 270px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #002341;
+  color: #002341;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* header nav */
+
+header {
+  background-color: #FFFFFF;
+  height: 90px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  margin-left: auto;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+nav li {
+  padding: 5px 0px 10px;
+  margin: 40px 20px 0px 0px;
+  font-size: 14px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li.navlinks.active {
+  font-family: 'Gotham Regular', sans-serif;
+  color: #002341;
+  border-bottom: 3px solid #d2b88b;
+}
+
+nav h1 {
+  background: url('img/willis-allen-christies-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 40px;
+  margin: 23px 0px 0px 20px;
+}
+
+.sign-in-link {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 8px;
+  margin: 10px;
+  width: 75px;
+}
+
+.sign-in-link a {
+  margin: 0px;
+  font-size: 12px;
+}
+
+/*start search bar*/
+
+section.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #F1F1F1;
+  box-shadow: 0 4px 11px 0 rgba(0,0,0,.2);
+  margin-bottom: 14px;
+}
+
+section.search-bar ul {
+  margin-left: auto;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+section.search-bar li {
+  font-family: 'Gotham Regular', sans-serif;
+  color: #002341;
+  line-height: 1.42857143;
+  margin: 15px;
+  font-size: 14px;
+}
+
+.search-input-area {
+  width: 50%;
+  margin-left: 48px;
+}
+
+.search-input-area input {
+  border: 1px solid #bebcbc;
+  height: 30px;
+  width: 280px;
+  padding-left: 10px;
+}
+
+.search-input-area button {
+  padding: 5px 20px;
+  width: 125px;
+  height: 34px;
+}
+
+.fa-search {
+  display: none;
+}
+
+section.search-bar a {
+text-decoration: underline;
+display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #4C4C4C;
+}
+
+/*main content*/
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.main img {
+  margin-right: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main button {
+  margin-bottom: 15px;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptions {
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+}
+
+.office-description {
+  width: 680px;
+}
+
+.contact-page {
+  width: 680px;
+}
+
+.tour-office-button {
+  margin-top: 20px;
+}
+
+.profiles {
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.profile-card {
+  margin: 0px 60px 0px 60px;
+}
+
+.profile-card h3 {
+  margin-bottom: 5px;
+}
+
+.profile-card a {
+  font-family: 'Gotham Regular', sans-serif;
+}
+
+.profile-card li {
+  font-family: 'Gotham Thin', sans-serif;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+}
+
+.main ul {
+  margin-bottom: 30px;
+}
+
+.office-img {
+  width: 400px;
+  height: 300px;
+}
+
+.profile-img {
+  width: 264px;
+  height: 351px;
+}
+
+.dropdown-nav {
+  display: none;
+}
+
+.mobile-search-link {
+  display: none;
+}
+
+.fa-caret-down {
+  display: none;
+}
+
+.fa-envelope {
+  margin-right: 5px;
+}
+
+.fa-car {
+  margin-right: 5px;
+}
+
+/*footer*/
+
+footer {
+  font-size: 12px;
+  height: 580px;
+  width: auto;
+  background: url('img/bg-skyline.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  padding-top: 30px;
+}
+
+footer h3 {
+  line-height: 38px;
+  font-size: 32px;
+  letter-spacing: .05em;
+  color: #333333;
+  margin-bottom: 35px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+form input {
+  border: 1px solid #bebcbc;
+  height: 20px;
+  width: 210px;
+  padding: 6px 10px;
+  font-size: 14px;
+  margin: 0px 20px 0px 20px;
+}
+
+div.row {
+  margin-bottom: 20px;
+}
+
+div.row-final {
+  display: flex;
+  flex-direction: row;
+}
+
+div.radio {
+  width: 130px;
+  margin-left: 20px;
+}
+
+div.radio input {
+  margin: 5px 0px 0px 0px;
+  padding-left: 0;
+  width: 20px;
+}
+
+button.send-button {
+  width: 160px;
+  margin-left: 75px;
+  margin-top: 50px;
+}
+
+.email-label {
+  margin-left: 20px;
+}
+
+textarea.large-message {
+  border: 1px solid #bebcbc;
+  margin-left: 20px;
+  width: 500px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+label.selector-area {
+  height: 50px;
+  color: #333333;
+}
+
+.form-container {
+  font-family: 'Gotham Regular', sans-serif;
+  padding: 20px 5px 30px;
+  width: 550px;
+  height: 500px;
+  margin: auto;
+  background-color: rgba(255,255,255,.8);
+}
+
+#brought-you-dropdown {
+  font-family: FontAwesome;
+}
+
+/*begin responsive*/
+
+@media (max-width: 1024px) {
+  nav li {
+    font-size: 0.5em;
+  }
+
+  section.search-bar li {
+    font-size: 0.5em;
+  }
+}
+
+/*begin ipad styles*/
+
+@media (max-width: 930px) {
+  nav ul {
+    display: none;
+  }
+
+  h2 {
+    margin-left: 24px;
+  }
+
+  .dropdown-nav {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 23px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  section.search-bar ul {
+    display: none;
+  }
+
+  .mobile-search-link {
+    display: block;
+    color: #002341;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  div.search-input-area {
+    margin-left: 0px;
+  }
+
+  .search-input-area input {
+    width: 200px;
+    padding-left: 10px;
+  }
+
+  .search-input-area button {
+    padding: 5px 20px;
+    width: 125px;
+    height: 34px;
+  }
+
+  .fa-caret-down {
+    display: block;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  nav h1 {
+    background: url('img/willis-allen-christies-1x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 30px;
+    margin: 20px 0px 0px 12px;
+  }
+}
+
+/*start iphone5 styles*/
+
+@media (max-width: 400px) {
+  nav h1 {
+    background: url('img/willis-allen-christies-1x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 20px;
+    margin: 28px 0px 0px 12px;
+  }
+
+  button {
+    width: 280px;
+    margin: 0px 0px 15px 5px;
+  }
+
+  .dropdown-nav {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .search-bar {
+    justify-content: flex-start;
+  }
+
+  .search-input-area input {
+    width: 200px;
+    padding-left: 10px;
+  }
+
+  .search-input-area button {
+    display: none;
+  }
+
+  .mobile-search-link {
+    display: none;
+  }
+
+  .fa-caret-down {
+    display: none;
+  }
+
+  .fa-search {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    border: 1px solid #002341;
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  section.main {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .office-img {
+    width: 300px;
+    height: 230px;
+  }
+
+  .main ul {
+    margin: 10px 0px 20px 0px;
+  }
+
+  .office-description {
+    width: 300px;
+  }
+
+  .contact-page {
+    width: 300px;
+  }
+
+  section.profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card ul {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    height: 720px;
+  }
+
+  footer input {
+    width: 250px;
+  }
+
+  textarea.large-message {
+    width: 265px;
+  }
+
+  .form-container {
+    padding: 20px 5px 10px 0px;
+    width: 300px;
+    height: 650px;
+  }
+
+  button.send-button {
+    margin-left: 7px;
+  }
+
+  div.radio li {
+    font-size: 10px;
+  }
+}
